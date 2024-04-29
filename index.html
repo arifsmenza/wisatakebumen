@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kebumen Tourism and Culture Website</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link sc
+  </head>
+
+  <body>
+    
+    <header>
+      <nav> <a href="index.html"><img src="assets/images/apple-touch-icon.png" class="new-logo"/></a>
+        <ul>
+          <li>
+            <a href="#sejarah">Tentang Kebumen</a>
+          </li>
+          <li>
+            <a href="#geografis">Geografis</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Tempat Wisata 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#wisata-1">Pantai Menganti</a>
+                <a href="#wisata-2">Alun-alun Pancasila</a>
+                <a href="#wisata-3">Geopark Karangsambung</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </li>
+        </ul>
+      </nav>
+      <!--slideshow-->
+     
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="assets/images/img_nature_wide.jpg" style="width:100%">
+  <div class="text">Mau Ekplore Saharian di Pantai Menganti? , Bisa Banget!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="assets/images/img_snow_wide.jpg" style="width:100%">
+  <div class="text">Mau Ekplore Saharian di Alun alun Pancasila? , Bisa Banget!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="assets/images/img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Mau Ekplore Saharian di Geopark Karangsambung? , Bisa Banget!</div>
+</div>
+
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot">Pantai Menganti</span> 
+  <span class="dot">Alun alun Pancasila</span> 
+  <span class="dot">Geopark Karangsambung</span> 
+</div>
+<br>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+      <!--end of slideshow-->
+    <div class="jumbotron">
+      
+      <h1>Kebumen</h1>
+      <p>
+        SEMARAK (Sejahtera , Mandiri , Berakhlak , Bersama Rakyat)
+      </p>
+    </div>
+      
+    
+    </header>
+
+    <main>
+      <!-- Konten artikel -->
+      <div id="content">
+        <article id="sejarah" class="card">
+          <h2>Tentang Kebumen</h2>
+          <img src="assets/images/history.jpg" alt="sejarah" class="featured-image"/>
+          <p>
+            Kota Kebumen berada di daerah paling selatan provinsi Jawa Tengah, gak heran kalau disana terdapat banyak wisata pantai yang unik. Pasalnya, walaupun di daerah pesisir, kota ini ternyata memiliki beberapa daerah pegunungan di pantainya. Salah pantai teruniknya adalah Menganti yang memiliki pasir berwarna putih (jarang-jarang loh ada pasir putih di Jawa Tengah).Selain logat khas ngapaknya, apa aja ya keunikan dari kota kebumen? Yuk, langsung saja lanjut ke daftar berikut ini.
+</p>
+          <div id="dots2"></div><div id="more2" class="showmore">
+
+          <p>
+            1. Dikenal sebagai kota Walet</p>
+            <p>2. Penduduk Kebumen baik hati!</p>
+            <p>3. Kota yang nyaman</p>
+            <p>4. Sejarah perjuangan Kemit</p>
+            <p>5. Memiliki destinasi pantai cantik</p>
+            <p>6. Penghasil genteng Sokka</p>
+            <p>7. Ora ngapak ora kepenak</p>
+          </div>
+        <button onclick="myFunction2()" id="myBtn2" class="btnreadmore">Read more</button>
+        
+        </article>
+
+        <article id="geografis" class="card">
+          <h2>Geografis</h2>
+          <img src="assets/images/geografis.jpg" alt="geografis" class="featured-image"/>
+          <p>
+            Kabupaten Kebumen mempunyai wilayah seluas 1.281, 12 km2.[10] Kondisi beberapa wilayah merupakan daerah pantai dan pegunungan, tetapi sebagian besar merupakan dataran rendah.
+</p>
+          <div id="dots1"></div><div id="more1" class="showmore">
+            <p>Dari luas wilayah Kabupaten Kebumen, tercatat 49.768, 00 hektare atau sekitar 31, 04% sebagai lahan sawah dan 108, 343.50 hektare atau 68.96% sebagai lahan kering.</p>
+            <p>Menurut penggunaannya, sebagian besar lahan sawah beririgasi teknis dan hampir seluruhnya (46, 18%) dapat ditanami dua kali dalam setahun, sebagian lagi berupa sawah tadah hujan (37, 82%) yang di beberapa tempat dapat ditanami dua kali dalam setahun, serta 11, 25% lahan sawah beririgasi setengah teknis dan sederhana.</p>
+            <p>Lahan kering digunakan untuk bangunan seluas 40.985, 00 hektare (37, 73%), tegalan/kebun seluas 33.777, 00 hektare (33, 57%) serta hutan negara seluas 22.861, 00 hektare (21, 08%) dan sisanya digunakan untuk padang penggembalaan, tambak, kolam, tanaman kayu-kayuan, serta lahan yang sementara tidak diusahakan dan tanah lainnya.
+                  </p>
+        </div>
+        <button onclick="myFunction1()" id="myBtn1" class="btnreadmore">Read more</button>
+        </article>
+
+        <article id="wisata" class="card">
+          <h2>Wisata</h2>
+          <div id="wisata-1"></div>
+          <p>
+            Ini dia rekomendasi tempat wisata Kebumen terbaru yang wajib dikunjungi! Di kabupaten ini terdapat banyak wisata alam dengan pemandangan memukau. Kamu bahkan dapat menjumpai pantai yang langsung mengarah ke Samudra Hindia, lho. Selain pantai, Kebumen juga memiliki tempat wisata sejarah dan taman bermain yang tak kalah menarik untuk dijelajahi. 
+
+            Nah, apabila sedang merencanakan liburan, masukkan Kebumen sebagai salah satu bucket list-mu. Untuk rekomendasi tempat wisata Kebumen, bisa simak dalam beberapa tempat wisata berikut ini:
+          </p>
+          
+          <section>
+            
+            <h3>Pantai Menganti</h3>
+            <img src="assets/images/img_nature_wide.jpg" alt="farm house" class="featured-image"/>
+            <div id="wisata-2"></div>
+            <p>
+              Pantai Menganti merupakan salah satu destinasi wisata yang ada di Kebumen, Jawa Tengah. Pantai Menganti ini salah satu dari jajaran pantai selatan yang memiliki pemandangan indah.
+Pantai Menganti ini terletak di di Desa Karangduwur, Kecamatan Ayah, Kabupaten Kebumen, Jawa Tengah. Pantai yang menyediakan spot untuk berburu sunset dan sunrise ini jadi pilihan wisatawan saat berkunjung ke Kebumen.
+              
+            </p>
+            
+          </section>
+
+          <section>
+            <h3>Alun alun Pancasila</h3>
+            <img src="assets/images/img_snow_wide.jpg" alt="bosscha" class="featured-image"/>
+            <div id="wisata-3"></div>
+            <p>
+              Alun-alun Kebumen bernama Alun-alun Pancasila itu ditujukan menjadi lokasi wisata kota, dan tempat santai dengan berbagai sarana yang ramah anak dan disabilitas.
+            </p>
+          </section>
+          <section>
+            <h3>Geopark Karangsambung</h3>
+            <img src="assets/images/img_mountains_wide.jpg" alt="bosscha" class="featured-image"/>
+            <div id="wisata-3"></div>
+            <p>
+              Menjelajahi Geopark Karangsambung-Karangbolong di Kebumen, Jawa Tengah serasa menjelajahi dasar samudra tempat terbentuknya Pulau Jawa.
+            </p>
+          </section>
+        </article>
+      </div>
+      <!--java script-->
+      <script type="text/javascript">
+        function myFunction1() {
+          var dots = document.getElementById("dots1");
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("myBtn1");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read More";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read Less";
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+        <script type="text/javascript">
+          function myFunction2() {
+            var dots2 = document.getElementById("dots2");
+            var moreText2 = document.getElementById("more2");
+            var btnText2 = document.getElementById("myBtn2");
+          
+            if (dots2.style.display === "none") {
+              dots2.style.display = "inline";
+              btnText2.innerHTML = "Read More";
+              moreText2.style.display = "none";
+            } else {
+              dots2.style.display = "none";
+              btnText2.innerHTML = "Read Less";
+              moreText2.style.display = "inline";
+            }
+          }
+          </script>
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile" class="card">
+          <header>
+            <h2>Kota Bandung</h2>
+            <p>Kota Kembang Paris van Java</p>
+            <figure>
+              <img src="assets/images/bandung-badge.png" />
+              <figcaption>Lambang</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3 style="text-align: center;">Informasi Lainnya</h3>
+
+            <table align="center">
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Hari jadi</th>
+                <td>25 September 1810</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>167.67 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Bahasa Daerah</th>
+                <td>Sunda</td>
+              </tr>
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62 22</td>
+                
+              </tr>
+              <tr>&nbsp;</tr>
+              <th>&nbsp;</th>
+                <td>&nbsp;</td>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <footer-top>
+        <footer-top-left>
+          
+          <a href="index.html"><img src="assets/images/apple-touch-icon.png" class="" width="100px"/></a>
+          <p>
+          <a href="index.html"><img src="assets/images/icons8-facebook-24.png" class="" width="24px"/></a>
+          <a href="index.html"><img src="assets/images/icons8-instagram-24.png" class="" width="24px"/></a>
+          <a href="index.html"><img src="assets/images/icons8-youtube-24.png" class="" width="24px"/></a>
+          <a href="index.html"><img src="assets/images/icons8-whatsapp-24.png" class="" width="24"/></a></p>
+        </footer-top-left>
+        <footer-top-right>
+          Kunjungi situs lainnya 
+          <select name="ap">
+            <option>Please choose an option</option>
+          </select>
+      
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+          <script>
+            const $select = $('select[name="ap"]');
+            const opts = [
+              {'value':'https://disparbud.kebumenkab.go.id/', 'text':'Dinas Pariwisata'},
+              {'value':'https://www2.kebumenkab.go.id/', 'text':'Pemerintah Kab.Kebumen'},
+            ];
+      
+            opts.forEach(function(obj){
+              $("<option />", {
+                value: obj.value,
+                text: obj.text
+              }).appendTo($select)
+            });
+      
+            $select.on("change", function(){
+              window.location = this.value;
+            });
+          </script>
+          <p style="text-align: center;">
+            Kebijakan Cookie | Kebijakan Privasi | Syarat dan Ketentuan | Hubungi Kami </p>
+          </footer-top-right>
+      </footer-top>
+      <p>Situs ini dibuat untuk menyelesaikan Tugas Akhir dari Dicoding dengan tema Front End Developer<br> dikembangkan oleh Arif Munandar &#169; 2024</p>
+    </footer>
+  </body>
+</html>
